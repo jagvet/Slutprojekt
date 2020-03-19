@@ -10,11 +10,13 @@ namespace Slutprojekt
     {
         static void Main(string[] args)
         {
+            string LoginOrCreate = "";
+
             Console.WriteLine("Welcome to MySpase");
             Console.WriteLine("");
             Console.WriteLine("Do you want to LOGIN or CREATE ACCOUNT ?");
 
-
+            LoginOrCreate = Console.ReadLine();
 
             Console.ReadLine();
         }
