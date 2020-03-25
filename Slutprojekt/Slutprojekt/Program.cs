@@ -18,6 +18,8 @@ namespace Slutprojekt
 
             LoginOrCreate = Console.ReadLine();
 
+
+
             Console.ReadLine();
         }
     }
