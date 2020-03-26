@@ -18,7 +18,7 @@ namespace Slutprojekt
 
             LoginOrCreate = Console.ReadLine();
 
-
+            CreateLogin.CreateUser();
 
             Console.ReadLine();
         }

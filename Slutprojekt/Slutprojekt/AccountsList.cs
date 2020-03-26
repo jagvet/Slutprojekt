@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Slutprojekt
 {
-    class AccountsList
+    class AccountsList : CreateLogin
     {
-
+        public static List<string> accountList = new List<string>();
     }
 }
