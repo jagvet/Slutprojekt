@@ -10,15 +10,35 @@ namespace Slutprojekt
     {
         static void Main(string[] args)
         {
-            string LoginOrCreate = "";
+            string haveAccount = "";
 
             Console.WriteLine("Welcome to MySpase");
             Console.WriteLine("");
-            Console.WriteLine("Do you want to LOGIN or CREATE ACCOUNT ?");
+            Console.WriteLine("Do you already have an account?");
 
-            LoginOrCreate = Console.ReadLine();
+            haveAccount = Console.ReadLine();
+            Console.Clear();
+            haveAccount.ToLower();
 
-            CreateLogin.CreateUser();
+            while (haveAccount != "yes" && haveAccount != "no")
+            {
+                Console.Clear();
+                Console.WriteLine("Welcome to MySpase");
+                Console.WriteLine("");
+                Console.WriteLine("Please, enter yes or no.");
+                haveAccount = Console.ReadLine();
+                haveAccount.ToLower();
+            }
+
+            while(haveAccount != "yes")
+            {
+                Console.Clear();
+                Console.WriteLine("Welcome to MySpase");
+                Console.WriteLine("");
+                CreateLogin.CreateUser();
+                haveAccount = "yes";
+            }
+
 
             Console.ReadLine();
         }
