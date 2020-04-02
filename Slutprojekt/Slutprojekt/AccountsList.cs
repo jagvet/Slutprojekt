@@ -9,5 +9,17 @@ namespace Slutprojekt
     class AccountsList : CreateLogin
     {
         public static List<string> accountList = new List<string>();
+
+        static public void PrintList()
+        {
+            for (int i = 0; i < accountList.Count; i++)
+            {
+                Console.WriteLine(accountList[i]);
+            }
+
+        }
+
+        
+
     }
 }

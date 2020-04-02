@@ -39,6 +39,10 @@ namespace Slutprojekt
                 haveAccount = "yes";
             }
 
+            //AccountsList.PrintList();
+
+            Login.SignIn();
+
 
             Console.ReadLine();
         }

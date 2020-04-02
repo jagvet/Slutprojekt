@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace Slutprojekt
 {
-    class Login : CreateLogin
+    class Login : AccountsList
     {
+        public static string username;
+        public static string password;
+
+        static public void SignIn()
+        {
+            Console.WriteLine("Please enter your username");
+
+            username = Console.ReadLine();
+
+
+
+            AccountsList.PrintList();
+
+
+        }
+        
+
+
+
+
     }
 }
