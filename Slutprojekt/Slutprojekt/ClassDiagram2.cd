@@ -15,7 +15,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Slutprojekt.CreateLogin">
-    <Position X="2" Y="1" Width="1.5" />
+    <Position X="3.5" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAIAAAAAAAAAAEAAAAAAAAAAAAAAgAAAAA=</HashCode>
       <FileName>CreateLogin.cs</FileName>
