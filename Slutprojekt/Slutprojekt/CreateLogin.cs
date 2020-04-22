@@ -24,6 +24,7 @@ namespace Slutprojekt
             while (check == true) //Om det finns måste man ta ett annat
             {
                 Console.WriteLine("Username already taken");
+                Console.WriteLine("Enter a new username");
                 username = Console.ReadLine();
                 username.ToLower();
 

@@ -14,7 +14,7 @@ namespace Slutprojekt
 
             AccountsList.accountList.Add("kalle");
             AccountsList.accountList.Add("oskar");
-            AccountsList.accountList.Add("Chris"); //Tre stycken användare läggs till i listan vid start.
+            AccountsList.accountList.Add("chris"); //Tre stycken användare läggs till i listan vid start.
             
 
             Console.WriteLine("Welcome to MySpase");

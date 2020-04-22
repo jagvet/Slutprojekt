@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Slutprojekt
 {
-    class Login : AccountsList
+    class Login : CreateLogin
     {
         //Början på min klass för att kunna logga in
 
