@@ -10,32 +10,35 @@ namespace Slutprojekt
     {
         static string username = "";
         static string password;
+        static public bool check; //Skapar variablerna jag behöver
 
-        static public void CreateUser()
+        static public void CreateUser() //Metoden för att skapa en användare
         {
-            AccountsList.accountList.Add("Kalle");
+            
             Console.WriteLine("Set a username:");
             username = Console.ReadLine();
-            Console.WriteLine("Your username is: " + username);
+            username = username.ToLower(); //Först skapar man ett användarnamn
 
-            AccountsList.accountList.Add(username);
+            check = AccountsList.accountList.Contains(username); //Kollar om användarnamnet redan finns. check blir true eller false
 
-            UserCheck();
+            while (check == true) //Om det finns måste man ta ett annat
+            {
+                Console.WriteLine("Username already taken");
+                username = Console.ReadLine();
+                username.ToLower();
+
+                check = AccountsList.accountList.Contains(username); //Kollar igen
+            }
+
+            Console.WriteLine("Your username is: " + username); //Skriver ut ens användarnamn
+
+            AccountsList.accountList.Add(username); //Om man har ett unikt användarnamn läggs det till i listan
+
             
-            Console.WriteLine("Set a password:");
+            Console.WriteLine("Set a password:"); //Här ska jag göra så man skapar ett lösenord också
             password = Console.ReadLine();
             Console.Clear();
         }
-
-        static public void UserCheck()
-        {
-            for (int i = 0; i < AccountsList.accountList.Count; i++)
-            {
-                if (username == AccountsList.accountList[i])
-                {
-                    Console.WriteLine("Username already taken");
-                }
-            }
-        }
+        
     }
 }

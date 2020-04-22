@@ -8,6 +8,9 @@ namespace Slutprojekt
 {
     class Login : AccountsList
     {
+        //Början på min klass för att kunna logga in
+
+
         public static string username;
         public static string password;
 
@@ -17,9 +20,7 @@ namespace Slutprojekt
 
             username = Console.ReadLine();
 
-
-
-            AccountsList.PrintList();
+            
 
 
         }
